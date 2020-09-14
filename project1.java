@@ -1,4 +1,7 @@
 class Animal {
+  String name;
+  String type;
+  int day;
   public static void wakeUp();
   public static void makeNoise();
   public static void eat();
@@ -62,10 +65,16 @@ class Salamander extends Amphibian {
 
 }
 
-class Zookeeper {
+public abstract class ZooEmployee {
   public static void WakeAnimals();
   public static void RollCall();
   public static void FeedAnimals();
   public static void ExerciseAnimals();
   public static void SleepAnimals();
+}
+
+class Zookeeper extends ZooEmployee {
+  public static void main(String[] args) {
+    Zookeeper John = new Zookeeper();
+  }
 }
