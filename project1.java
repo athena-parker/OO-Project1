@@ -1,6 +1,7 @@
 //main for every class?
 //instantiate objects in its own class or all in one main function?
 //syntax for modifying a function in a subclass
+//classes with no modifications? blank?
 
 class Animal {
   String name;
@@ -78,7 +79,11 @@ public abstract class ZooEmployee {
 }
 
 class Zookeeper extends ZooEmployee {
+
+}
+
+class Zoo {
   public static void main(String[] args) {
-    Zookeeper John = new Zookeeper();
+    //instantiate objects
   }
 }
