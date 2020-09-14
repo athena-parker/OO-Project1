@@ -1,3 +1,7 @@
+//main for every class?
+//instantiate objects in its own class or all in one main function?
+//syntax for modifying a function in a subclass
+
 class Animal {
   String name;
   String type;
