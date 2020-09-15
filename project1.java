@@ -43,18 +43,30 @@ class Feline extends Animal {
 }
 
 class Lion extends Feline {
+  Lion(String name_){
+    name = name_;
+    type = "Lion";
+  }
   public void makeNoise() {
     System.out.println("Roar!");
   }
 }
 
 class Cat extends Feline {
+  Cat(String name_){
+    name = name_;
+    type = "Cat";
+  }
   public void makeNoise() {
     System.out.println("Meow!");
   }
 }
 
 class Tiger extends Feline {
+  Tiger(String name_){
+    name = name_;
+    type = "Tiger";
+  }
   public void makeNoise() {
     System.out.println("Growl!");
   }
@@ -65,6 +77,10 @@ abstract class Canine extends Animal {
 }
 
 class Dog extends Canine {
+  Dog(String name_){
+    name = name_;
+    type = "Dog";
+  }
   public void makeNoise() {
     System.out.println("Bark!");
   }
@@ -80,6 +96,10 @@ class Dog extends Canine {
 }
 
 class Wolf extends Canine {
+  Wolf(String name_){
+    name = name_;
+    type = "Wolf";
+  }
   public void makeNoise() {
     System.out.println("Woof!");
   }
@@ -98,18 +118,30 @@ class Pachyderm extends Animal {
 }
 
 class Hippo extends Pachyderm {
+  Hippo(String name_){
+    name = name_;
+    type = "Hippo";
+  }
   public void makeNoise() {
     System.out.println("Grunt!");
   }
 }
 
 class Elephant extends Pachyderm {
+  Elephant(String name_){
+    name = name_;
+    type = "Elephant";
+  }
   public void makeNoise() {
     System.out.println("Hooooooo!");
   }
 }
 
 class Rhino extends Pachyderm {
+  Rhino(String name_){
+    name = name_;
+    type = "Rhino";
+  }
   public void makeNoise() {
     System.out.println("Moo!");
   }
@@ -120,12 +152,20 @@ abstract class Amphibian extends Animal {
 }
 
 class Frog extends Amphibian {
+  Frog(String name_){
+    name = name_;
+    type = "Frog";
+  }
   public void makeNoise() {
     System.out.println("Ribbit!");
   }
 }
 
 class Salamander extends Amphibian {
+  Salamander(String name_){
+    name = name_;
+    type = "Salamander";
+  }
   public void makeNoise() {
     System.out.println("Pop!");
   }
