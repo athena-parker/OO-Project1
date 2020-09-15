@@ -28,7 +28,6 @@ public abstract class ZooEmployee {
             System.out.println("Enter number of days");
             days = sc.nextInt();
         }
-        int d;
 
         //make Zookeeper
         Zookeeper John = new Zookeeper("John");
@@ -66,7 +65,7 @@ public abstract class ZooEmployee {
 
 
 
-        System.out.println("Hello World!");
+        //System.out.println("Hello World!");
         for (int i = 1; i <= days; i = i + 1){
             John.Arrive(i);
             for(int j = 0; j < 10; j++){
