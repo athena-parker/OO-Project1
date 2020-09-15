@@ -71,7 +71,12 @@ public abstract class ZooEmployee {
             John.Arrive(i);
             for(int j = 0; j < 10; j++){
                 John.WakeAnimals(zooAnimals[j]);
+                John.RollCall(zooAnimals[j]);
+                John.FeedAnimals(zooAnimals[j]);
+                John.ExerciseAnimals(zooAnimals[j]);
+                John.SleepAnimals(zooAnimals[j]);
             }
+            John.Leave(i);
         }
     }
 }
@@ -82,6 +87,10 @@ class Zookeeper extends ZooEmployee {
     }
     public void Arrive(int day){
         System.out.println("Zookeeper " + personName + " arrives at the Zoo on Day " + day);
+
+    }
+    public void Leave(int day){
+        System.out.println("Zookeeper " + personName + " ends Day " + day + " and leaves the Zoo.\n");
 
     }
     public static void WakeAnimals(Animal animal) {
