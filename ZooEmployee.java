@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public abstract class ZooEmployee {
+public abstract class ZooEmployee { //ABSTRACTION - public class of methods provided
 
     protected String personName;
 
@@ -27,6 +27,7 @@ class Zookeeper extends ZooEmployee {
     Zookeeper(String name_){
         personName = name_;
     }
+    //zookeeper methods: modifying zoo employee methods
     public void Arrive(int day){
         System.out.println("Zookeeper " + personName + " arrives at the Zoo on Day " + day);
 
@@ -60,13 +61,13 @@ class Zookeeper extends ZooEmployee {
         animal.sleep();
     }
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in); //take user input for # of days
         int days = 0;
         while(days <= 0) {
             System.out.println("Enter number of days");
             days = sc.nextInt();
         }
-
+        //IDENTITY: each object is unique and has its own ID
         //make Zookeeper
         Zookeeper John = new Zookeeper("John");
 
@@ -89,7 +90,7 @@ class Zookeeper extends ZooEmployee {
         Salamander Shannon = new Salamander("Shannon");
 
         //store animals in array
-        Animal[] zooAnimals = new Animal[10];
+        Animal[] zooAnimals = new Animal[10]; //POLYMORPHISM - making array of Animal objects, in reality, all Animal subclasses
         zooAnimals[0] = Levi;
         zooAnimals[1] = Carter;
         zooAnimals[2] = Tyrone;
@@ -101,15 +102,13 @@ class Zookeeper extends ZooEmployee {
         zooAnimals[8] = FranzFerdinand;
         zooAnimals[9] = Shannon;
 
-
-        //System.out.println("Hello World!");
-        for (int i = 1; i <= days; i = i + 1){
+        for (int i = 1; i <= days; i = i + 1){ // loop through the days
             John.Arrive(i);
-            for(int j = 0; j < 10; j++){
+            for(int j = 0; j < 10; j++){ //wake all the animals first
                 John.WakeAnimals(zooAnimals[j]);
             }
-            John.RollCall(zooAnimals);
-            for(int j = 0; j < 10; j++){
+            John.RollCall(zooAnimals); //call all the animals
+            for(int j = 0; j < 10; j++){ //feed, exercise, and put all animals to bed
                 John.FeedAnimals(zooAnimals[j]);
                 John.ExerciseAnimals(zooAnimals[j]);
                 John.SleepAnimals(zooAnimals[j]);
@@ -118,13 +117,3 @@ class Zookeeper extends ZooEmployee {
         }
     }
 }
-
-/*class project1 {
-    public static void main(String[] args) {
-        Zookeeper John = new Zookeeper();
-        System.out.println("Hello World!");
-        for (int i = 1; i <= 7; i = i + 1){
-            //stuff
-        }
-    }
-}*/

@@ -5,11 +5,11 @@
 
 import java.util.Random;
 
-class Animal {
-  protected String name;
+class Animal { //highest level class for all animals
+  protected String name; //ENCALSULATION - listing variables as protected so they will be inherited by sunclasses
   protected String type;
   protected int day;
-  public void wakeUp() {
+  public void wakeUp() { //standard animal methods
     System.out.println(name + " the " + type + " wakes up.");
   }
   public void makeNoise(){
@@ -26,7 +26,7 @@ class Animal {
   }
 }
 
-class Feline extends Animal {
+class Feline extends Animal { //30% roams, 30% makes noise, 40% sleeps
   public void sleep() {
     Random rand_feline = new Random();
     int random_int = rand_feline.nextInt(100);
@@ -42,7 +42,7 @@ class Feline extends Animal {
   }
 }
 
-class Lion extends Feline {
+class Lion extends Feline { //modify makenoise method
   Lion(String name_){
     name = name_;
     type = "Lion";
@@ -52,7 +52,7 @@ class Lion extends Feline {
   }
 }
 
-class Cat extends Feline {
+class Cat extends Feline { //modify makenoise
   Cat(String name_){
     name = name_;
     type = "Cat";
@@ -62,7 +62,7 @@ class Cat extends Feline {
   }
 }
 
-class Tiger extends Feline {
+class Tiger extends Feline { //modify makenoise
   Tiger(String name_){
     name = name_;
     type = "Tiger";
@@ -72,11 +72,11 @@ class Tiger extends Feline {
   }
 }
 
-abstract class Canine extends Animal {
+abstract class Canine extends Animal { //ABSTRACT CLASS - is not instantiated
 
 }
 
-class Dog extends Canine {
+class Dog extends Canine { //modify makenoise, 25% digs, 75% roams
   Dog(String name_){
     name = name_;
     type = "Dog";
@@ -95,7 +95,7 @@ class Dog extends Canine {
   }
 }
 
-class Wolf extends Canine {
+class Wolf extends Canine { //modify makenoise
   Wolf(String name_){
     name = name_;
     type = "Wolf";
@@ -105,7 +105,7 @@ class Wolf extends Canine {
   }
 }
 
-class Pachyderm extends Animal {
+class Pachyderm extends Animal { //25% charges, 75% roams
   public void roam() {
     Random rand_pachy = new Random();
     if (rand_pachy.nextInt(100) < 25) { //25%
@@ -117,7 +117,7 @@ class Pachyderm extends Animal {
   }
 }
 
-class Hippo extends Pachyderm {
+class Hippo extends Pachyderm { //modify makenoise
   Hippo(String name_){
     name = name_;
     type = "Hippo";
@@ -127,7 +127,7 @@ class Hippo extends Pachyderm {
   }
 }
 
-class Elephant extends Pachyderm {
+class Elephant extends Pachyderm { //modify makenoise
   Elephant(String name_){
     name = name_;
     type = "Elephant";
@@ -137,7 +137,7 @@ class Elephant extends Pachyderm {
   }
 }
 
-class Rhino extends Pachyderm {
+class Rhino extends Pachyderm { //modify makenoise
   Rhino(String name_){
     name = name_;
     type = "Rhino";
@@ -147,11 +147,11 @@ class Rhino extends Pachyderm {
   }
 }
 
-abstract class Amphibian extends Animal {
+abstract class Amphibian extends Animal { //abstract class, not instantiated
 
 }
 
-class Frog extends Amphibian {
+class Frog extends Amphibian { //modify makenoise
   Frog(String name_){
     name = name_;
     type = "Frog";
@@ -161,7 +161,7 @@ class Frog extends Amphibian {
   }
 }
 
-class Salamander extends Amphibian {
+class Salamander extends Amphibian { //modify makenoise
   Salamander(String name_){
     name = name_;
     type = "Salamander";
@@ -170,5 +170,3 @@ class Salamander extends Amphibian {
     System.out.println("Pop!");
   }
 }
-
-
