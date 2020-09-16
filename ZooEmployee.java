@@ -9,7 +9,7 @@ public abstract class ZooEmployee {
     public static void WakeAnimals(){
         System.out.println("The Zookeeper wakes the animals");
     }
-    public void RollCall(){
+    public static void RollCall(){
         System.out.println("The Zookeeper counts the animals");
     }
     public static void FeedAnimals(){
@@ -21,6 +21,44 @@ public abstract class ZooEmployee {
     public static void SleepAnimals(){
         System.out.println("The Zookeeper turns off the lights");
     }
+}
+
+class Zookeeper extends ZooEmployee {
+    Zookeeper(String name_){
+        personName = name_;
+    }
+    public void Arrive(int day){
+        System.out.println("Zookeeper " + personName + " arrives at the Zoo on Day " + day);
+
+    }
+    public void Leave(int day){
+        System.out.println("Zookeeper " + personName + " ends Day " + day + " and leaves the Zoo.\n");
+
+    }
+    public static void WakeAnimals(Animal animal) {
+        System.out.println("Zookeeper wakes " + animal.name + " the " + animal.type + ".");
+        animal.wakeUp();
+    }
+    public void RollCall(Animal[] animals_) {
+        System.out.println("Time to RollCall the animals");
+        for(int i = 0; i < 10; i++){
+            System.out.println("Zookeeper " + personName + " calls " + animals_[i].name + " the " + animals_[i].type + ".");
+            System.out.println(animals_[i].name + " the " + animals_[i].type + " says ");
+            animals_[i].makeNoise();
+        }
+    }
+    public static void FeedAnimals(Animal animal) {
+        System.out.println("Zookeeper feeds " + animal.name + " the " + animal.type + ".");
+        animal.eat();
+    }
+    public static void ExerciseAnimals(Animal animal) {
+        System.out.println("Zookeeper exercises " + animal.name + " the " + animal.type + ".");
+        animal.roam();
+    }
+    public static void SleepAnimals(Animal animal) {
+        System.out.println("Zookeeper puts " + animal.name + " the " + animal.type + " to sleep.");
+        animal.sleep();
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int days = 0;
@@ -28,7 +66,6 @@ public abstract class ZooEmployee {
             System.out.println("Enter number of days");
             days = sc.nextInt();
         }
-        int d;
 
         //make Zookeeper
         Zookeeper John = new Zookeeper("John");
@@ -65,43 +102,20 @@ public abstract class ZooEmployee {
         zooAnimals[9] = Shannon;
 
 
-
-        System.out.println("Hello World!");
+        //System.out.println("Hello World!");
         for (int i = 1; i <= days; i = i + 1){
             John.Arrive(i);
             for(int j = 0; j < 10; j++){
                 John.WakeAnimals(zooAnimals[j]);
             }
+            John.RollCall(zooAnimals);
+            for(int j = 0; j < 10; j++){
+                John.FeedAnimals(zooAnimals[j]);
+                John.ExerciseAnimals(zooAnimals[j]);
+                John.SleepAnimals(zooAnimals[j]);
+            }
+            John.Leave(i);
         }
-    }
-}
-
-class Zookeeper extends ZooEmployee {
-    Zookeeper(String name_){
-        personName = name_;
-    }
-    public void Arrive(int day){
-        System.out.println("Zookeeper " + personName + " arrives at the Zoo on Day " + day);
-
-    }
-    public static void WakeAnimals(Animal animal) {
-        System.out.println("Zookeeper wakes " + animal.name + " the " + animal.type + ".");
-        animal.wakeUp();
-    }
-    public static void RollCall(Animal animal) {
-        System.out.println("Zookeeper rollcalls " + animal.name + " the " + animal.type + ".");
-    }
-    public static void FeedAnimals(Animal animal) {
-        System.out.println("Zookeeper feeds " + animal.name + " the " + animal.type + ".");
-        animal.eat();
-    }
-    public static void ExerciseAnimals(Animal animal) {
-        System.out.println("Zookeeper exercises " + animal.name + " the " + animal.type + ".");
-        animal.roam();
-    }
-    public static void SleepAnimals(Animal animal) {
-        System.out.println("Zookeeper puts " + animal.name + " the " + animal.type + " to sleep.");
-        animal.sleep();
     }
 }
 
