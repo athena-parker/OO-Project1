@@ -1,0 +1,799 @@
+Enter number of days
+7
+Zookeeper John arrives at the Zoo on Day 1
+Zookeeper wakes Levi the Lion.
+Levi the Lion wakes up.
+Zookeeper wakes Carter the Cat.
+Carter the Cat wakes up.
+Zookeeper wakes Tyrone the Tiger.
+Tyrone the Tiger wakes up.
+Zookeeper wakes Darryl the Dog.
+Darryl the Dog wakes up.
+Zookeeper wakes Wendy the Wolf.
+Wendy the Wolf wakes up.
+Zookeeper wakes Holly the Hippo.
+Holly the Hippo wakes up.
+Zookeeper wakes Ernesto the Elephant.
+Ernesto the Elephant wakes up.
+Zookeeper wakes Rotini the Rhino.
+Rotini the Rhino wakes up.
+Zookeeper wakes FranzFerdinand the Frog.
+FranzFerdinand the Frog wakes up.
+Zookeeper wakes Shannon the Salamander.
+Shannon the Salamander wakes up.
+Time to RollCall the animals
+Zookeeper John calls Levi the Lion.
+Levi the Lion says 
+Roar!
+Zookeeper John calls Carter the Cat.
+Carter the Cat says 
+Meow!
+Zookeeper John calls Tyrone the Tiger.
+Tyrone the Tiger says 
+Growl!
+Zookeeper John calls Darryl the Dog.
+Darryl the Dog says 
+Bark!
+Zookeeper John calls Wendy the Wolf.
+Wendy the Wolf says 
+Woof!
+Zookeeper John calls Holly the Hippo.
+Holly the Hippo says 
+Grunt!
+Zookeeper John calls Ernesto the Elephant.
+Ernesto the Elephant says 
+Hooooooo!
+Zookeeper John calls Rotini the Rhino.
+Rotini the Rhino says 
+Moo!
+Zookeeper John calls FranzFerdinand the Frog.
+FranzFerdinand the Frog says 
+Ribbit!
+Zookeeper John calls Shannon the Salamander.
+Shannon the Salamander says 
+Pop!
+Zookeeper feeds Levi the Lion.
+Levi the Lion eats.
+Zookeeper exercises Levi the Lion.
+Levi the Lion roams.
+Zookeeper puts Levi the Lion to sleep.
+Levi the Lion sleeps.
+Zookeeper feeds Carter the Cat.
+Carter the Cat eats.
+Zookeeper exercises Carter the Cat.
+Carter the Cat roams.
+Zookeeper puts Carter the Cat to sleep.
+Carter the Cat sleeps.
+Zookeeper feeds Tyrone the Tiger.
+Tyrone the Tiger eats.
+Zookeeper exercises Tyrone the Tiger.
+Tyrone the Tiger roams.
+Zookeeper puts Tyrone the Tiger to sleep.
+Tyrone the Tiger roams.
+Zookeeper feeds Darryl the Dog.
+Darryl the Dog eats.
+Zookeeper exercises Darryl the Dog.
+Darryl the Dog roams.
+Zookeeper puts Darryl the Dog to sleep.
+Darryl the Dog sleeps.
+Zookeeper feeds Wendy the Wolf.
+Wendy the Wolf eats.
+Zookeeper exercises Wendy the Wolf.
+Wendy the Wolf roams.
+Zookeeper puts Wendy the Wolf to sleep.
+Wendy the Wolf sleeps.
+Zookeeper feeds Holly the Hippo.
+Holly the Hippo eats.
+Zookeeper exercises Holly the Hippo.
+Holly the Hippo roams.
+Zookeeper puts Holly the Hippo to sleep.
+Holly the Hippo sleeps.
+Zookeeper feeds Ernesto the Elephant.
+Ernesto the Elephant eats.
+Zookeeper exercises Ernesto the Elephant.
+Ernesto the Elephant roams.
+Zookeeper puts Ernesto the Elephant to sleep.
+Ernesto the Elephant sleeps.
+Zookeeper feeds Rotini the Rhino.
+Rotini the Rhino eats.
+Zookeeper exercises Rotini the Rhino.
+Rotini the Rhino roams.
+Zookeeper puts Rotini the Rhino to sleep.
+Rotini the Rhino sleeps.
+Zookeeper feeds FranzFerdinand the Frog.
+FranzFerdinand the Frog eats.
+Zookeeper exercises FranzFerdinand the Frog.
+FranzFerdinand the Frog roams.
+Zookeeper puts FranzFerdinand the Frog to sleep.
+FranzFerdinand the Frog sleeps.
+Zookeeper feeds Shannon the Salamander.
+Shannon the Salamander eats.
+Zookeeper exercises Shannon the Salamander.
+Shannon the Salamander roams.
+Zookeeper puts Shannon the Salamander to sleep.
+Shannon the Salamander sleeps.
+Zookeeper John ends Day 1 and leaves the Zoo.
+
+Zookeeper John arrives at the Zoo on Day 2
+Zookeeper wakes Levi the Lion.
+Levi the Lion wakes up.
+Zookeeper wakes Carter the Cat.
+Carter the Cat wakes up.
+Zookeeper wakes Tyrone the Tiger.
+Tyrone the Tiger wakes up.
+Zookeeper wakes Darryl the Dog.
+Darryl the Dog wakes up.
+Zookeeper wakes Wendy the Wolf.
+Wendy the Wolf wakes up.
+Zookeeper wakes Holly the Hippo.
+Holly the Hippo wakes up.
+Zookeeper wakes Ernesto the Elephant.
+Ernesto the Elephant wakes up.
+Zookeeper wakes Rotini the Rhino.
+Rotini the Rhino wakes up.
+Zookeeper wakes FranzFerdinand the Frog.
+FranzFerdinand the Frog wakes up.
+Zookeeper wakes Shannon the Salamander.
+Shannon the Salamander wakes up.
+Time to RollCall the animals
+Zookeeper John calls Levi the Lion.
+Levi the Lion says 
+Roar!
+Zookeeper John calls Carter the Cat.
+Carter the Cat says 
+Meow!
+Zookeeper John calls Tyrone the Tiger.
+Tyrone the Tiger says 
+Growl!
+Zookeeper John calls Darryl the Dog.
+Darryl the Dog says 
+Bark!
+Zookeeper John calls Wendy the Wolf.
+Wendy the Wolf says 
+Woof!
+Zookeeper John calls Holly the Hippo.
+Holly the Hippo says 
+Grunt!
+Zookeeper John calls Ernesto the Elephant.
+Ernesto the Elephant says 
+Hooooooo!
+Zookeeper John calls Rotini the Rhino.
+Rotini the Rhino says 
+Moo!
+Zookeeper John calls FranzFerdinand the Frog.
+FranzFerdinand the Frog says 
+Ribbit!
+Zookeeper John calls Shannon the Salamander.
+Shannon the Salamander says 
+Pop!
+Zookeeper feeds Levi the Lion.
+Levi the Lion eats.
+Zookeeper exercises Levi the Lion.
+Levi the Lion roams.
+Zookeeper puts Levi the Lion to sleep.
+Levi the Lion sleeps.
+Zookeeper feeds Carter the Cat.
+Carter the Cat eats.
+Zookeeper exercises Carter the Cat.
+Carter the Cat roams.
+Zookeeper puts Carter the Cat to sleep.
+Carter the Cat roams.
+Zookeeper feeds Tyrone the Tiger.
+Tyrone the Tiger eats.
+Zookeeper exercises Tyrone the Tiger.
+Tyrone the Tiger roams.
+Zookeeper puts Tyrone the Tiger to sleep.
+Tyrone the Tiger sleeps.
+Zookeeper feeds Darryl the Dog.
+Darryl the Dog eats.
+Zookeeper exercises Darryl the Dog.
+Darryl the Dog roams.
+Zookeeper puts Darryl the Dog to sleep.
+Darryl the Dog sleeps.
+Zookeeper feeds Wendy the Wolf.
+Wendy the Wolf eats.
+Zookeeper exercises Wendy the Wolf.
+Wendy the Wolf roams.
+Zookeeper puts Wendy the Wolf to sleep.
+Wendy the Wolf sleeps.
+Zookeeper feeds Holly the Hippo.
+Holly the Hippo eats.
+Zookeeper exercises Holly the Hippo.
+Holly the Hippo roams.
+Zookeeper puts Holly the Hippo to sleep.
+Holly the Hippo sleeps.
+Zookeeper feeds Ernesto the Elephant.
+Ernesto the Elephant eats.
+Zookeeper exercises Ernesto the Elephant.
+Ernesto the Elephant roams.
+Zookeeper puts Ernesto the Elephant to sleep.
+Ernesto the Elephant sleeps.
+Zookeeper feeds Rotini the Rhino.
+Rotini the Rhino eats.
+Zookeeper exercises Rotini the Rhino.
+Rotini the Rhino roams.
+Zookeeper puts Rotini the Rhino to sleep.
+Rotini the Rhino sleeps.
+Zookeeper feeds FranzFerdinand the Frog.
+FranzFerdinand the Frog eats.
+Zookeeper exercises FranzFerdinand the Frog.
+FranzFerdinand the Frog roams.
+Zookeeper puts FranzFerdinand the Frog to sleep.
+FranzFerdinand the Frog sleeps.
+Zookeeper feeds Shannon the Salamander.
+Shannon the Salamander eats.
+Zookeeper exercises Shannon the Salamander.
+Shannon the Salamander roams.
+Zookeeper puts Shannon the Salamander to sleep.
+Shannon the Salamander sleeps.
+Zookeeper John ends Day 2 and leaves the Zoo.
+
+Zookeeper John arrives at the Zoo on Day 3
+Zookeeper wakes Levi the Lion.
+Levi the Lion wakes up.
+Zookeeper wakes Carter the Cat.
+Carter the Cat wakes up.
+Zookeeper wakes Tyrone the Tiger.
+Tyrone the Tiger wakes up.
+Zookeeper wakes Darryl the Dog.
+Darryl the Dog wakes up.
+Zookeeper wakes Wendy the Wolf.
+Wendy the Wolf wakes up.
+Zookeeper wakes Holly the Hippo.
+Holly the Hippo wakes up.
+Zookeeper wakes Ernesto the Elephant.
+Ernesto the Elephant wakes up.
+Zookeeper wakes Rotini the Rhino.
+Rotini the Rhino wakes up.
+Zookeeper wakes FranzFerdinand the Frog.
+FranzFerdinand the Frog wakes up.
+Zookeeper wakes Shannon the Salamander.
+Shannon the Salamander wakes up.
+Time to RollCall the animals
+Zookeeper John calls Levi the Lion.
+Levi the Lion says 
+Roar!
+Zookeeper John calls Carter the Cat.
+Carter the Cat says 
+Meow!
+Zookeeper John calls Tyrone the Tiger.
+Tyrone the Tiger says 
+Growl!
+Zookeeper John calls Darryl the Dog.
+Darryl the Dog says 
+Bark!
+Zookeeper John calls Wendy the Wolf.
+Wendy the Wolf says 
+Woof!
+Zookeeper John calls Holly the Hippo.
+Holly the Hippo says 
+Grunt!
+Zookeeper John calls Ernesto the Elephant.
+Ernesto the Elephant says 
+Hooooooo!
+Zookeeper John calls Rotini the Rhino.
+Rotini the Rhino says 
+Moo!
+Zookeeper John calls FranzFerdinand the Frog.
+FranzFerdinand the Frog says 
+Ribbit!
+Zookeeper John calls Shannon the Salamander.
+Shannon the Salamander says 
+Pop!
+Zookeeper feeds Levi the Lion.
+Levi the Lion eats.
+Zookeeper exercises Levi the Lion.
+Levi the Lion roams.
+Zookeeper puts Levi the Lion to sleep.
+Roar!
+Zookeeper feeds Carter the Cat.
+Carter the Cat eats.
+Zookeeper exercises Carter the Cat.
+Carter the Cat roams.
+Zookeeper puts Carter the Cat to sleep.
+Meow!
+Zookeeper feeds Tyrone the Tiger.
+Tyrone the Tiger eats.
+Zookeeper exercises Tyrone the Tiger.
+Tyrone the Tiger roams.
+Zookeeper puts Tyrone the Tiger to sleep.
+Growl!
+Zookeeper feeds Darryl the Dog.
+Darryl the Dog eats.
+Zookeeper exercises Darryl the Dog.
+Darryl the Dog roams.
+Zookeeper puts Darryl the Dog to sleep.
+Darryl the Dog sleeps.
+Zookeeper feeds Wendy the Wolf.
+Wendy the Wolf eats.
+Zookeeper exercises Wendy the Wolf.
+Wendy the Wolf roams.
+Zookeeper puts Wendy the Wolf to sleep.
+Wendy the Wolf sleeps.
+Zookeeper feeds Holly the Hippo.
+Holly the Hippo eats.
+Zookeeper exercises Holly the Hippo.
+Holly the Hippo charges.
+Zookeeper puts Holly the Hippo to sleep.
+Holly the Hippo sleeps.
+Zookeeper feeds Ernesto the Elephant.
+Ernesto the Elephant eats.
+Zookeeper exercises Ernesto the Elephant.
+Ernesto the Elephant roams.
+Zookeeper puts Ernesto the Elephant to sleep.
+Ernesto the Elephant sleeps.
+Zookeeper feeds Rotini the Rhino.
+Rotini the Rhino eats.
+Zookeeper exercises Rotini the Rhino.
+Rotini the Rhino roams.
+Zookeeper puts Rotini the Rhino to sleep.
+Rotini the Rhino sleeps.
+Zookeeper feeds FranzFerdinand the Frog.
+FranzFerdinand the Frog eats.
+Zookeeper exercises FranzFerdinand the Frog.
+FranzFerdinand the Frog roams.
+Zookeeper puts FranzFerdinand the Frog to sleep.
+FranzFerdinand the Frog sleeps.
+Zookeeper feeds Shannon the Salamander.
+Shannon the Salamander eats.
+Zookeeper exercises Shannon the Salamander.
+Shannon the Salamander roams.
+Zookeeper puts Shannon the Salamander to sleep.
+Shannon the Salamander sleeps.
+Zookeeper John ends Day 3 and leaves the Zoo.
+
+Zookeeper John arrives at the Zoo on Day 4
+Zookeeper wakes Levi the Lion.
+Levi the Lion wakes up.
+Zookeeper wakes Carter the Cat.
+Carter the Cat wakes up.
+Zookeeper wakes Tyrone the Tiger.
+Tyrone the Tiger wakes up.
+Zookeeper wakes Darryl the Dog.
+Darryl the Dog wakes up.
+Zookeeper wakes Wendy the Wolf.
+Wendy the Wolf wakes up.
+Zookeeper wakes Holly the Hippo.
+Holly the Hippo wakes up.
+Zookeeper wakes Ernesto the Elephant.
+Ernesto the Elephant wakes up.
+Zookeeper wakes Rotini the Rhino.
+Rotini the Rhino wakes up.
+Zookeeper wakes FranzFerdinand the Frog.
+FranzFerdinand the Frog wakes up.
+Zookeeper wakes Shannon the Salamander.
+Shannon the Salamander wakes up.
+Time to RollCall the animals
+Zookeeper John calls Levi the Lion.
+Levi the Lion says 
+Roar!
+Zookeeper John calls Carter the Cat.
+Carter the Cat says 
+Meow!
+Zookeeper John calls Tyrone the Tiger.
+Tyrone the Tiger says 
+Growl!
+Zookeeper John calls Darryl the Dog.
+Darryl the Dog says 
+Bark!
+Zookeeper John calls Wendy the Wolf.
+Wendy the Wolf says 
+Woof!
+Zookeeper John calls Holly the Hippo.
+Holly the Hippo says 
+Grunt!
+Zookeeper John calls Ernesto the Elephant.
+Ernesto the Elephant says 
+Hooooooo!
+Zookeeper John calls Rotini the Rhino.
+Rotini the Rhino says 
+Moo!
+Zookeeper John calls FranzFerdinand the Frog.
+FranzFerdinand the Frog says 
+Ribbit!
+Zookeeper John calls Shannon the Salamander.
+Shannon the Salamander says 
+Pop!
+Zookeeper feeds Levi the Lion.
+Levi the Lion eats.
+Zookeeper exercises Levi the Lion.
+Levi the Lion roams.
+Zookeeper puts Levi the Lion to sleep.
+Levi the Lion roams.
+Zookeeper feeds Carter the Cat.
+Carter the Cat eats.
+Zookeeper exercises Carter the Cat.
+Carter the Cat roams.
+Zookeeper puts Carter the Cat to sleep.
+Meow!
+Zookeeper feeds Tyrone the Tiger.
+Tyrone the Tiger eats.
+Zookeeper exercises Tyrone the Tiger.
+Tyrone the Tiger roams.
+Zookeeper puts Tyrone the Tiger to sleep.
+Tyrone the Tiger roams.
+Zookeeper feeds Darryl the Dog.
+Darryl the Dog eats.
+Zookeeper exercises Darryl the Dog.
+Darryl the Dog roams.
+Zookeeper puts Darryl the Dog to sleep.
+Darryl the Dog sleeps.
+Zookeeper feeds Wendy the Wolf.
+Wendy the Wolf eats.
+Zookeeper exercises Wendy the Wolf.
+Wendy the Wolf roams.
+Zookeeper puts Wendy the Wolf to sleep.
+Wendy the Wolf sleeps.
+Zookeeper feeds Holly the Hippo.
+Holly the Hippo eats.
+Zookeeper exercises Holly the Hippo.
+Holly the Hippo charges.
+Zookeeper puts Holly the Hippo to sleep.
+Holly the Hippo sleeps.
+Zookeeper feeds Ernesto the Elephant.
+Ernesto the Elephant eats.
+Zookeeper exercises Ernesto the Elephant.
+Ernesto the Elephant roams.
+Zookeeper puts Ernesto the Elephant to sleep.
+Ernesto the Elephant sleeps.
+Zookeeper feeds Rotini the Rhino.
+Rotini the Rhino eats.
+Zookeeper exercises Rotini the Rhino.
+Rotini the Rhino roams.
+Zookeeper puts Rotini the Rhino to sleep.
+Rotini the Rhino sleeps.
+Zookeeper feeds FranzFerdinand the Frog.
+FranzFerdinand the Frog eats.
+Zookeeper exercises FranzFerdinand the Frog.
+FranzFerdinand the Frog roams.
+Zookeeper puts FranzFerdinand the Frog to sleep.
+FranzFerdinand the Frog sleeps.
+Zookeeper feeds Shannon the Salamander.
+Shannon the Salamander eats.
+Zookeeper exercises Shannon the Salamander.
+Shannon the Salamander roams.
+Zookeeper puts Shannon the Salamander to sleep.
+Shannon the Salamander sleeps.
+Zookeeper John ends Day 4 and leaves the Zoo.
+
+Zookeeper John arrives at the Zoo on Day 5
+Zookeeper wakes Levi the Lion.
+Levi the Lion wakes up.
+Zookeeper wakes Carter the Cat.
+Carter the Cat wakes up.
+Zookeeper wakes Tyrone the Tiger.
+Tyrone the Tiger wakes up.
+Zookeeper wakes Darryl the Dog.
+Darryl the Dog wakes up.
+Zookeeper wakes Wendy the Wolf.
+Wendy the Wolf wakes up.
+Zookeeper wakes Holly the Hippo.
+Holly the Hippo wakes up.
+Zookeeper wakes Ernesto the Elephant.
+Ernesto the Elephant wakes up.
+Zookeeper wakes Rotini the Rhino.
+Rotini the Rhino wakes up.
+Zookeeper wakes FranzFerdinand the Frog.
+FranzFerdinand the Frog wakes up.
+Zookeeper wakes Shannon the Salamander.
+Shannon the Salamander wakes up.
+Time to RollCall the animals
+Zookeeper John calls Levi the Lion.
+Levi the Lion says 
+Roar!
+Zookeeper John calls Carter the Cat.
+Carter the Cat says 
+Meow!
+Zookeeper John calls Tyrone the Tiger.
+Tyrone the Tiger says 
+Growl!
+Zookeeper John calls Darryl the Dog.
+Darryl the Dog says 
+Bark!
+Zookeeper John calls Wendy the Wolf.
+Wendy the Wolf says 
+Woof!
+Zookeeper John calls Holly the Hippo.
+Holly the Hippo says 
+Grunt!
+Zookeeper John calls Ernesto the Elephant.
+Ernesto the Elephant says 
+Hooooooo!
+Zookeeper John calls Rotini the Rhino.
+Rotini the Rhino says 
+Moo!
+Zookeeper John calls FranzFerdinand the Frog.
+FranzFerdinand the Frog says 
+Ribbit!
+Zookeeper John calls Shannon the Salamander.
+Shannon the Salamander says 
+Pop!
+Zookeeper feeds Levi the Lion.
+Levi the Lion eats.
+Zookeeper exercises Levi the Lion.
+Levi the Lion roams.
+Zookeeper puts Levi the Lion to sleep.
+Roar!
+Zookeeper feeds Carter the Cat.
+Carter the Cat eats.
+Zookeeper exercises Carter the Cat.
+Carter the Cat roams.
+Zookeeper puts Carter the Cat to sleep.
+Carter the Cat sleeps.
+Zookeeper feeds Tyrone the Tiger.
+Tyrone the Tiger eats.
+Zookeeper exercises Tyrone the Tiger.
+Tyrone the Tiger roams.
+Zookeeper puts Tyrone the Tiger to sleep.
+Growl!
+Zookeeper feeds Darryl the Dog.
+Darryl the Dog eats.
+Zookeeper exercises Darryl the Dog.
+Darryl the Dog roams.
+Zookeeper puts Darryl the Dog to sleep.
+Darryl the Dog sleeps.
+Zookeeper feeds Wendy the Wolf.
+Wendy the Wolf eats.
+Zookeeper exercises Wendy the Wolf.
+Wendy the Wolf roams.
+Zookeeper puts Wendy the Wolf to sleep.
+Wendy the Wolf sleeps.
+Zookeeper feeds Holly the Hippo.
+Holly the Hippo eats.
+Zookeeper exercises Holly the Hippo.
+Holly the Hippo charges.
+Zookeeper puts Holly the Hippo to sleep.
+Holly the Hippo sleeps.
+Zookeeper feeds Ernesto the Elephant.
+Ernesto the Elephant eats.
+Zookeeper exercises Ernesto the Elephant.
+Ernesto the Elephant roams.
+Zookeeper puts Ernesto the Elephant to sleep.
+Ernesto the Elephant sleeps.
+Zookeeper feeds Rotini the Rhino.
+Rotini the Rhino eats.
+Zookeeper exercises Rotini the Rhino.
+Rotini the Rhino roams.
+Zookeeper puts Rotini the Rhino to sleep.
+Rotini the Rhino sleeps.
+Zookeeper feeds FranzFerdinand the Frog.
+FranzFerdinand the Frog eats.
+Zookeeper exercises FranzFerdinand the Frog.
+FranzFerdinand the Frog roams.
+Zookeeper puts FranzFerdinand the Frog to sleep.
+FranzFerdinand the Frog sleeps.
+Zookeeper feeds Shannon the Salamander.
+Shannon the Salamander eats.
+Zookeeper exercises Shannon the Salamander.
+Shannon the Salamander roams.
+Zookeeper puts Shannon the Salamander to sleep.
+Shannon the Salamander sleeps.
+Zookeeper John ends Day 5 and leaves the Zoo.
+
+Zookeeper John arrives at the Zoo on Day 6
+Zookeeper wakes Levi the Lion.
+Levi the Lion wakes up.
+Zookeeper wakes Carter the Cat.
+Carter the Cat wakes up.
+Zookeeper wakes Tyrone the Tiger.
+Tyrone the Tiger wakes up.
+Zookeeper wakes Darryl the Dog.
+Darryl the Dog wakes up.
+Zookeeper wakes Wendy the Wolf.
+Wendy the Wolf wakes up.
+Zookeeper wakes Holly the Hippo.
+Holly the Hippo wakes up.
+Zookeeper wakes Ernesto the Elephant.
+Ernesto the Elephant wakes up.
+Zookeeper wakes Rotini the Rhino.
+Rotini the Rhino wakes up.
+Zookeeper wakes FranzFerdinand the Frog.
+FranzFerdinand the Frog wakes up.
+Zookeeper wakes Shannon the Salamander.
+Shannon the Salamander wakes up.
+Time to RollCall the animals
+Zookeeper John calls Levi the Lion.
+Levi the Lion says 
+Roar!
+Zookeeper John calls Carter the Cat.
+Carter the Cat says 
+Meow!
+Zookeeper John calls Tyrone the Tiger.
+Tyrone the Tiger says 
+Growl!
+Zookeeper John calls Darryl the Dog.
+Darryl the Dog says 
+Bark!
+Zookeeper John calls Wendy the Wolf.
+Wendy the Wolf says 
+Woof!
+Zookeeper John calls Holly the Hippo.
+Holly the Hippo says 
+Grunt!
+Zookeeper John calls Ernesto the Elephant.
+Ernesto the Elephant says 
+Hooooooo!
+Zookeeper John calls Rotini the Rhino.
+Rotini the Rhino says 
+Moo!
+Zookeeper John calls FranzFerdinand the Frog.
+FranzFerdinand the Frog says 
+Ribbit!
+Zookeeper John calls Shannon the Salamander.
+Shannon the Salamander says 
+Pop!
+Zookeeper feeds Levi the Lion.
+Levi the Lion eats.
+Zookeeper exercises Levi the Lion.
+Levi the Lion roams.
+Zookeeper puts Levi the Lion to sleep.
+Levi the Lion sleeps.
+Zookeeper feeds Carter the Cat.
+Carter the Cat eats.
+Zookeeper exercises Carter the Cat.
+Carter the Cat roams.
+Zookeeper puts Carter the Cat to sleep.
+Carter the Cat sleeps.
+Zookeeper feeds Tyrone the Tiger.
+Tyrone the Tiger eats.
+Zookeeper exercises Tyrone the Tiger.
+Tyrone the Tiger roams.
+Zookeeper puts Tyrone the Tiger to sleep.
+Growl!
+Zookeeper feeds Darryl the Dog.
+Darryl the Dog eats.
+Zookeeper exercises Darryl the Dog.
+Darryl the Dog digs.
+Zookeeper puts Darryl the Dog to sleep.
+Darryl the Dog sleeps.
+Zookeeper feeds Wendy the Wolf.
+Wendy the Wolf eats.
+Zookeeper exercises Wendy the Wolf.
+Wendy the Wolf roams.
+Zookeeper puts Wendy the Wolf to sleep.
+Wendy the Wolf sleeps.
+Zookeeper feeds Holly the Hippo.
+Holly the Hippo eats.
+Zookeeper exercises Holly the Hippo.
+Holly the Hippo charges.
+Zookeeper puts Holly the Hippo to sleep.
+Holly the Hippo sleeps.
+Zookeeper feeds Ernesto the Elephant.
+Ernesto the Elephant eats.
+Zookeeper exercises Ernesto the Elephant.
+Ernesto the Elephant roams.
+Zookeeper puts Ernesto the Elephant to sleep.
+Ernesto the Elephant sleeps.
+Zookeeper feeds Rotini the Rhino.
+Rotini the Rhino eats.
+Zookeeper exercises Rotini the Rhino.
+Rotini the Rhino roams.
+Zookeeper puts Rotini the Rhino to sleep.
+Rotini the Rhino sleeps.
+Zookeeper feeds FranzFerdinand the Frog.
+FranzFerdinand the Frog eats.
+Zookeeper exercises FranzFerdinand the Frog.
+FranzFerdinand the Frog roams.
+Zookeeper puts FranzFerdinand the Frog to sleep.
+FranzFerdinand the Frog sleeps.
+Zookeeper feeds Shannon the Salamander.
+Shannon the Salamander eats.
+Zookeeper exercises Shannon the Salamander.
+Shannon the Salamander roams.
+Zookeeper puts Shannon the Salamander to sleep.
+Shannon the Salamander sleeps.
+Zookeeper John ends Day 6 and leaves the Zoo.
+
+Zookeeper John arrives at the Zoo on Day 7
+Zookeeper wakes Levi the Lion.
+Levi the Lion wakes up.
+Zookeeper wakes Carter the Cat.
+Carter the Cat wakes up.
+Zookeeper wakes Tyrone the Tiger.
+Tyrone the Tiger wakes up.
+Zookeeper wakes Darryl the Dog.
+Darryl the Dog wakes up.
+Zookeeper wakes Wendy the Wolf.
+Wendy the Wolf wakes up.
+Zookeeper wakes Holly the Hippo.
+Holly the Hippo wakes up.
+Zookeeper wakes Ernesto the Elephant.
+Ernesto the Elephant wakes up.
+Zookeeper wakes Rotini the Rhino.
+Rotini the Rhino wakes up.
+Zookeeper wakes FranzFerdinand the Frog.
+FranzFerdinand the Frog wakes up.
+Zookeeper wakes Shannon the Salamander.
+Shannon the Salamander wakes up.
+Time to RollCall the animals
+Zookeeper John calls Levi the Lion.
+Levi the Lion says 
+Roar!
+Zookeeper John calls Carter the Cat.
+Carter the Cat says 
+Meow!
+Zookeeper John calls Tyrone the Tiger.
+Tyrone the Tiger says 
+Growl!
+Zookeeper John calls Darryl the Dog.
+Darryl the Dog says 
+Bark!
+Zookeeper John calls Wendy the Wolf.
+Wendy the Wolf says 
+Woof!
+Zookeeper John calls Holly the Hippo.
+Holly the Hippo says 
+Grunt!
+Zookeeper John calls Ernesto the Elephant.
+Ernesto the Elephant says 
+Hooooooo!
+Zookeeper John calls Rotini the Rhino.
+Rotini the Rhino says 
+Moo!
+Zookeeper John calls FranzFerdinand the Frog.
+FranzFerdinand the Frog says 
+Ribbit!
+Zookeeper John calls Shannon the Salamander.
+Shannon the Salamander says 
+Pop!
+Zookeeper feeds Levi the Lion.
+Levi the Lion eats.
+Zookeeper exercises Levi the Lion.
+Levi the Lion roams.
+Zookeeper puts Levi the Lion to sleep.
+Levi the Lion roams.
+Zookeeper feeds Carter the Cat.
+Carter the Cat eats.
+Zookeeper exercises Carter the Cat.
+Carter the Cat roams.
+Zookeeper puts Carter the Cat to sleep.
+Carter the Cat sleeps.
+Zookeeper feeds Tyrone the Tiger.
+Tyrone the Tiger eats.
+Zookeeper exercises Tyrone the Tiger.
+Tyrone the Tiger roams.
+Zookeeper puts Tyrone the Tiger to sleep.
+Tyrone the Tiger roams.
+Zookeeper feeds Darryl the Dog.
+Darryl the Dog eats.
+Zookeeper exercises Darryl the Dog.
+Darryl the Dog roams.
+Zookeeper puts Darryl the Dog to sleep.
+Darryl the Dog sleeps.
+Zookeeper feeds Wendy the Wolf.
+Wendy the Wolf eats.
+Zookeeper exercises Wendy the Wolf.
+Wendy the Wolf roams.
+Zookeeper puts Wendy the Wolf to sleep.
+Wendy the Wolf sleeps.
+Zookeeper feeds Holly the Hippo.
+Holly the Hippo eats.
+Zookeeper exercises Holly the Hippo.
+Holly the Hippo charges.
+Zookeeper puts Holly the Hippo to sleep.
+Holly the Hippo sleeps.
+Zookeeper feeds Ernesto the Elephant.
+Ernesto the Elephant eats.
+Zookeeper exercises Ernesto the Elephant.
+Ernesto the Elephant roams.
+Zookeeper puts Ernesto the Elephant to sleep.
+Ernesto the Elephant sleeps.
+Zookeeper feeds Rotini the Rhino.
+Rotini the Rhino eats.
+Zookeeper exercises Rotini the Rhino.
+Rotini the Rhino roams.
+Zookeeper puts Rotini the Rhino to sleep.
+Rotini the Rhino sleeps.
+Zookeeper feeds FranzFerdinand the Frog.
+FranzFerdinand the Frog eats.
+Zookeeper exercises FranzFerdinand the Frog.
+FranzFerdinand the Frog roams.
+Zookeeper puts FranzFerdinand the Frog to sleep.
+FranzFerdinand the Frog sleeps.
+Zookeeper feeds Shannon the Salamander.
+Shannon the Salamander eats.
+Zookeeper exercises Shannon the Salamander.
+Shannon the Salamander roams.
+Zookeeper puts Shannon the Salamander to sleep.
+Shannon the Salamander sleeps.
+Zookeeper John ends Day 7 and leaves the Zoo.
