@@ -6,7 +6,7 @@ class Animal { //highest level class for all animals
         System.out.println(name + " the " + type + " wakes up.");
     }
     public void makeNoise(){
-        System.out.println(name + " the " + type + " goes awoowowiwjaoaoaoaoa ");
+        System.out.println(name + " the " + type + " goes meh!");
     }
     public void eat() {
         System.out.println(name + " the " + type + " eats.");
@@ -17,4 +17,6 @@ class Animal { //highest level class for all animals
     public void sleep() {
         System.out.println(name + " the " + type + " sleeps.");
     }
+
+    //STRATEGY - all makeNoise functions changed to getNoise()
 }

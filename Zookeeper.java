@@ -2,8 +2,13 @@ import java.util.Scanner;
 
 class Zookeeper extends ZooEmployee {
     Context context;
-    Zookeeper(String name_){
+    Zookeeper(String name_) {
         personName = name_;
+    }
+    public void makeEvent(String event_) { //for each event, try to send observer the message
+        setChanged();
+        Message m = new Message(event_);
+        notifyObservers(m);
     }
     //zookeeper methods: modifying zoo employee methods
     public void Arrive(int day){
@@ -20,9 +25,11 @@ class Zookeeper extends ZooEmployee {
     }
     public void RollCall(Animal[] animals_) {
         System.out.println("Time to RollCall the animals");
-        for(int i = 0; i < 10; i++){
+        for(int i = 0; i < 20; i++){
             System.out.println("Zookeeper " + personName + " calls " + animals_[i].name + " the " + animals_[i].type + ".");
             System.out.print(animals_[i].name + " the " + animals_[i].type + " says ");
+
+            //all this is bc do not know how to create new context w/o creating new animal.
             if (animals_[i].type == "Lion") {
                 context = new Context (new Lion("Joe"));
             } else if (animals_[i].type == "Cat") {
@@ -70,7 +77,8 @@ class Zookeeper extends ZooEmployee {
         //IDENTITY: each object is unique and has its own ID
         //make Zookeeper
         Zookeeper John = new Zookeeper("John");
-
+        ZooAnnouncer Bob = new ZooAnnouncer("Bob", John);
+        John.addObserver(Bob); //zoo announcer is now observing zoo keeper
         //Make Felines
         Lion Levi = new Lion("Levi");
         Lion Lily = new Lion("Lily");
@@ -123,17 +131,27 @@ class Zookeeper extends ZooEmployee {
         zooAnimals[19] = Susan;
 
         for (int i = 1; i <= days; i = i + 1){ // loop through the days
+            Bob.Arrive(i);
+            John.makeEvent("arrive"); //arrive event, etc
             John.Arrive(i);
+
+            John.makeEvent("wake the animals");
             for(int j = 0; j < 20; j++){ //wake all the animals first
                 John.WakeAnimals(zooAnimals[j]);
             }
+
+            John.makeEvent("roll call the animals");
             John.RollCall(zooAnimals); //call all the animals
+
+            John.makeEvent("feed, exercise, and put the animals to sleep");
             for(int j = 0; j < 20; j++){ //feed, exercise, and put all animals to bed
                 John.FeedAnimals(zooAnimals[j]);
                 John.ExerciseAnimals(zooAnimals[j]);
                 John.SleepAnimals(zooAnimals[j]);
             }
+            John.makeEvent("leave");
             John.Leave(i);
+            Bob.Leave(i);
         }
     }
 }

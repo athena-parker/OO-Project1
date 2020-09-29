@@ -1,4 +1,7 @@
-public abstract class ZooEmployee { //ABSTRACTION - public class of methods provided
+import java.util.Observable;
+
+//zooemployee extends observable because zookeeper cannot extend observable and zooemployee
+public abstract class ZooEmployee extends Observable { //ABSTRACTION - public class of methods provided
 
     protected String personName;
 
