@@ -4,11 +4,25 @@ Kat Edfors, Athena Parker
 
 # Comments and Assumptions
 
-For this project, we made assumptions about the sounds animals make. We also assumed "roll call" meant asking each animal to make their noise. We also made guesses initially of which classes to put which functions, and did have to make a few changes as we moved along.
+Strategy Pattern:
+
+We created an interface, Noise, with a function getNoise that was used in each animal class to return the noise they make, rather than just implement the makeNoise function directly. 
+We then created a class Context which took in the context for the strategy pattern (the type of animal in our case), then executed the strategy based on the context.
+Finally, in the roll call function in the zookeeper class, we actually set the contexts, and executed the strategies.
+
+Observer Pattern:
+
+We created a class ZooAnnouncer which implements the Observer class, and most importantly the update function which communicates with our Observable class (Zookeeper).
+We made the ZooEmployee class extend from Observable, since Zookeeper cannot extend from both ZooEmployee and Observable.
+Zookeeper now has a makeEvent function, which sets change and notifies any observers (ZooAnnouncer) of any events. Using a Message object, notifyObservers passes the action the Zookeeper is performing to the update function of the ZooAnnouncer, who prints the action.
 
 # Issues Encountered
 
-We did have issues with running our program on our Windows machines originally, so we switched to use IntelliJ IDEA. We also struggled a bit with syntax as neither of us has used Java before, but overall everything went smoothly. 
+Current issues:
+
+Strategy: There has to be a better way to set the context than that. Ideally, we could somehow input our existing animal types rather than having to create a new animal object to set the context.
+
+Observer: The message is not passed correctly from notifyObservers in Zookeeper to update in ZooEmployee. Whenever we try to pass Message instead of Object as update's second argument, it gives error. How to fix?
 
 # Special Instructions
 
