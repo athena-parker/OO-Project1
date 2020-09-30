@@ -1,12 +1,10 @@
 class ZooFoodServer extends ZooEmployee{
     Context context;
-    ZooFoodServer(String name_) {
-        personName = name_;
+    ZooFoodServer(bean sourcebean) {
+        super(sourcebean);
     }
     public void makeEvent(String event_) { //for each event, try to send observer the message
-        setChanged();
-        Message m = new Message(event_);
-        notifyObservers(m);
+        event = event_;
     }
     public void Arrive(int day){
         System.out.println("ZooFoodServer " + personName + " arrives at the Zoo on Day " + day);

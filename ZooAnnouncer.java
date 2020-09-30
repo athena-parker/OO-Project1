@@ -1,12 +1,10 @@
-import java.util.Observer;
-import java.util.Observable;
-class ZooAnnouncer extends ZooEmployee implements Observer { //OBSERVER PATTERN
-    private Zookeeper zk;
-    private ZooFoodServer zfs;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
 
-    public ZooAnnouncer(String name_, Zookeeper zk) { //Zookepper is the observable
-        personName = name_;
-        this.zk = zk;
+class ZooAnnouncer extends ZooEmployee implements PropertyChangeListener { //OBSERVER PATTERN
+
+    public ZooAnnouncer(bean sourcebean) {
+        super(sourcebean);
     }
 
     public void Arrive(int day) {
@@ -17,19 +15,9 @@ class ZooAnnouncer extends ZooEmployee implements Observer { //OBSERVER PATTERN
         System.out.println("ZooAnnouncer " + personName + " ends Day " + day + " and leaves the Zoo.\n");
     }
 
-    public void update(Observable obs, Object obj) { //the messages. below commented function is the attempt with action
-        if (obs == zk) {
-            System.out.println("Hi, this is the Zoo Announcer. The Zookeeper is about to " + obj + "!");
-        }
-        else if(obs == zfs){
-            System.out.println("Hi, this is the Zoo Announcer. Food is Served!");
+    public void propertyChange(PropertyChangeEvent event) { //whenever event changes, zoo announcer announces.
+        if (event.getOldValue() != event.getNewValue()) {
+            System.out.println("Hi, this is the Zoo Announcer. " + event.getNewValue() + "!");
         }
     }
-
-//    public void update(Observable obs, Message event_) {
-//        if (obs == zk) {
-//            System.out.println("Hi, this is the Zoo Announcer. The Zookeeper is about to " + event_.getMessage() + "!");
-//        }
-//    }
-
 }

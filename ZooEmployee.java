@@ -1,10 +1,23 @@
-import java.util.Observable;
+import java.beans.PropertyChangeSupport;
 
 //zooemployee extends observable because zookeeper cannot extend observable and zooemployee
-public abstract class ZooEmployee extends Observable { //ABSTRACTION - public class of methods provided
+public abstract class ZooEmployee extends PropertyChangeSupport { //ABSTRACTION - public class of methods provided
 
     protected String personName;
+    protected String event;
 
+    /**
+     * Constructs a {@code PropertyChangeSupport} object.
+     *
+     * @param sourceBean The bean to be given as the source for any events.
+     */
+    public ZooEmployee(bean sourceBean) {
+        super(sourceBean);
+    }
+
+    public void setName(String name) { //for each event, try to send observer the message
+        personName = name;
+    }
     public static void WakeAnimals(){
         System.out.println("The Zookeeper wakes the animals");
     }

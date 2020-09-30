@@ -1,14 +1,11 @@
 import java.util.Scanner;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
 
 class Zookeeper extends ZooEmployee {
     Context context;
-    Zookeeper(String name_) {
-        personName = name_;
-    }
-    public void makeEvent(String event_) { //for each event, try to send observer the message
-        setChanged();
-        Message m = new Message(event_);
-        notifyObservers(m);
+    Zookeeper(bean sourceBean) {
+        super(sourceBean);
     }
     //zookeeper methods: modifying zoo employee methods
     public void Arrive(int day){
@@ -75,12 +72,16 @@ class Zookeeper extends ZooEmployee {
             days = sc.nextInt();
         }
         //IDENTITY: each object is unique and has its own ID
+        bean eventbean = new bean();
         //make Zookeeper
-        Zookeeper John = new Zookeeper("John");
-        ZooAnnouncer Bob = new ZooAnnouncer("Bob", John);
-        John.addObserver(Bob); //zoo announcer is now observing zoo keeper
+        Zookeeper John = new Zookeeper(eventbean);
+        John.setName("John");
+        ZooAnnouncer Bob = new ZooAnnouncer(eventbean);
+        Bob.setName("Bob");
         //make ZooFoodServer
-        ZooFoodServer Milan = new ZooFoodServer("Milan");
+        ZooFoodServer Milan = new ZooFoodServer(eventbean);
+        Milan.setName("Milan");
+        eventbean.addPropertyChangeListener(Bob); //zoo announcer is now an observer
         //Make Clock
         ZooClock clock = new ZooClock();
         //Make Felines
@@ -139,23 +140,23 @@ class Zookeeper extends ZooEmployee {
             while(clock.hour != 23){
                 if(clock.CurrTime == 8 && clock.meridiem == "am"){
                     Bob.Arrive(i);
-                    John.makeEvent("arrive"); //arrive event, etc
+                    eventbean.makeEvent("The Zookeeper has arrived"); //arrive event, etc
                     John.Arrive(i);
                     Milan.Arrive(i);
                 }
                 else if(clock.CurrTime == 9 && clock.meridiem == "am"){
-                    John.makeEvent("wake the animals");
+                    eventbean.makeEvent("The Zookeeper wakes the animals");
                     for(int j = 0; j < 20; j++){ //wake all the animals first
                         John.WakeAnimals(zooAnimals[j]);
                     }
                 }
                 else if(clock.CurrTime == 10 && clock.meridiem == "am"){
-                    John.makeEvent("roll call the animals");
+                    eventbean.makeEvent("The Zookeeper roll calls the animals");
                     John.RollCall(zooAnimals); //call all the animals
                     Milan.MakeFood(); //foodServer makes food
                 }
                 else if(clock.CurrTime == 12 && clock.meridiem == "pm"){
-                    Milan.makeEvent("Lunch is Served.");
+                    eventbean.makeEvent("Lunch is Served");
                     Milan.ServeFood();
                 }
                 else if(clock.CurrTime == 2 && clock.meridiem == "pm"){
@@ -165,13 +166,13 @@ class Zookeeper extends ZooEmployee {
                     Milan.MakeFood(); //foodServer makes food
                 }
                 else if(clock.CurrTime == 5 && clock.meridiem == "pm"){
-                    Milan.makeEvent("Dinner is Served.");
+                    eventbean.makeEvent("Dinner is Served");
                     Milan.ServeFood();
                 }
 
                 else if(clock.CurrTime == 7 && clock.meridiem == "pm"){
                     Milan.Clean();
-                    John.makeEvent("feed, exercise, and put the animals to sleep");
+                    eventbean.makeEvent("The Zookeeper feeds, exercises, and puts the animals to sleep");
                     for(int j = 0; j < 20; j++){ //feed, exercise, and put all animals to bed
                         John.FeedAnimals(zooAnimals[j]);
                         John.ExerciseAnimals(zooAnimals[j]);
@@ -179,7 +180,7 @@ class Zookeeper extends ZooEmployee {
                     }
                 }
                 else if(clock.CurrTime == 8 && clock.meridiem == "pm"){
-                    John.makeEvent("leave");
+                    eventbean.makeEvent("The Zookeeper leaves");
                     John.Leave(i);
                     Bob.Leave(i);
                     Milan.Leave(i);
