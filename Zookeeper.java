@@ -81,6 +81,8 @@ class Zookeeper extends ZooEmployee {
         John.addObserver(Bob); //zoo announcer is now observing zoo keeper
         //make ZooFoodServer
         ZooFoodServer Milan = new ZooFoodServer("Milan");
+        //Make Clock
+        ZooClock clock = new ZooClock();
         //Make Felines
         Lion Levi = new Lion("Levi");
         Lion Lily = new Lion("Lily");
@@ -131,8 +133,6 @@ class Zookeeper extends ZooEmployee {
         zooAnimals[17] = FredFerdinand;
         zooAnimals[18] = Shannon;
         zooAnimals[19] = Susan;
-
-        ZooClock clock = new ZooClock();
 
         for (int i = 1; i <= days; i = i + 1){ // loop through the days
             clock.Time();
