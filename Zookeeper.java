@@ -141,7 +141,6 @@ class Zookeeper extends ZooEmployee {
                     Bob.Arrive(i);
                     John.makeEvent("arrive"); //arrive event, etc
                     John.Arrive(i);
-                    Milan.makeEvent("arrive");
                     Milan.Arrive(i);
                 }
                 else if(clock.CurrTime == 9 && clock.meridiem == "am"){

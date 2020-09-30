@@ -2,6 +2,7 @@ import java.util.Observer;
 import java.util.Observable;
 class ZooAnnouncer extends ZooEmployee implements Observer { //OBSERVER PATTERN
     private Zookeeper zk;
+    private ZooFoodServer zfs;
 
     public ZooAnnouncer(String name_, Zookeeper zk) { //Zookepper is the observable
         personName = name_;
@@ -19,6 +20,9 @@ class ZooAnnouncer extends ZooEmployee implements Observer { //OBSERVER PATTERN
     public void update(Observable obs, Object obj) { //the messages. below commented function is the attempt with action
         if (obs == zk) {
             System.out.println("Hi, this is the Zoo Announcer. The Zookeeper is about to " + obj + "!");
+        }
+        else if(obs == zfs){
+            System.out.println("Hi, this is the Zoo Announcer. Food is Served!");
         }
     }
 
