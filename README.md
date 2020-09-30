@@ -12,17 +12,15 @@ Finally, in the roll call function in the zookeeper class, we actually set the c
 
 Observer Pattern:
 
-We created a class ZooAnnouncer which implements the Observer class, and most importantly the update function which communicates with our Observable class (Zookeeper).
-We made the ZooEmployee class extend from Observable, since Zookeeper cannot extend from both ZooEmployee and Observable.
-Zookeeper now has a makeEvent function, which sets change and notifies any observers (ZooAnnouncer) of any events. Using a Message object, notifyObservers passes the action the Zookeeper is performing to the update function of the ZooAnnouncer, who prints the action.
+We created a class ZooAnnouncer which implements the PropertyChangeListener class, and most importantly the propertyChange function which communicates with our bean, which wraps ouor PropertyChangeSupport class (ZooEmployee).
+We made the ZooEmployee class extend from PropertyChangeSupport, since Zookeeper and ZooFoodServer cannot extend from both ZooEmployee and PropertyChangeSupport.
+Bean has a makeEvent function, called whenever Zookeeper does anything or ZooFoodServer serves food, which changes the event and notifies any listeners (ZooAnnouncer) of any events. At each event change, ZooAnnouncer announces the action that was just taken.
 
 # Issues Encountered
 
-Current issues:
-
 Strategy: There has to be a better way to set the context than that. Ideally, we could somehow input our existing animal types rather than having to create a new animal object to set the context.
 
-Observer: The message is not passed correctly from notifyObservers in Zookeeper to update in ZooEmployee. Whenever we try to pass Message instead of Object as update's second argument, it gives error. How to fix?
+Observer: We originally tried to use the deprecated Observer/Observable pattern, and we had a lot of trouble trying to get a message relayed from ZooEmployee to ZooAnnouncer. Switching to PropertyChange went a lot smoother.
 
 # Special Instructions
 
