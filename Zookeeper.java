@@ -79,6 +79,8 @@ class Zookeeper extends ZooEmployee {
         Zookeeper John = new Zookeeper("John");
         ZooAnnouncer Bob = new ZooAnnouncer("Bob", John);
         John.addObserver(Bob); //zoo announcer is now observing zoo keeper
+        //make ZooFoodServer
+        ZooFoodServer Milan = new ZooFoodServer("Milan");
         //Make Felines
         Lion Levi = new Lion("Levi");
         Lion Lily = new Lion("Lily");
@@ -139,6 +141,8 @@ class Zookeeper extends ZooEmployee {
                     Bob.Arrive(i);
                     John.makeEvent("arrive"); //arrive event, etc
                     John.Arrive(i);
+                    Milan.makeEvent("arrive");
+                    Milan.Arrive(i);
                 }
                 else if(clock.CurrTime == 9 && clock.meridiem == "am"){
                     John.makeEvent("wake the animals");
@@ -149,8 +153,25 @@ class Zookeeper extends ZooEmployee {
                 else if(clock.CurrTime == 10 && clock.meridiem == "am"){
                     John.makeEvent("roll call the animals");
                     John.RollCall(zooAnimals); //call all the animals
+                    Milan.MakeFood(); //foodServer makes food
                 }
+                else if(clock.CurrTime == 12 && clock.meridiem == "pm"){
+                    Milan.makeEvent("Lunch is Served.");
+                    Milan.ServeFood();
+                }
+                else if(clock.CurrTime == 2 && clock.meridiem == "pm"){
+                    Milan.Clean();
+                }
+                else if(clock.CurrTime == 4 && clock.meridiem == "pm"){
+                    Milan.MakeFood(); //foodServer makes food
+                }
+                else if(clock.CurrTime == 5 && clock.meridiem == "pm"){
+                    Milan.makeEvent("Dinner is Served.");
+                    Milan.ServeFood();
+                }
+
                 else if(clock.CurrTime == 7 && clock.meridiem == "pm"){
+                    Milan.Clean();
                     John.makeEvent("feed, exercise, and put the animals to sleep");
                     for(int j = 0; j < 20; j++){ //feed, exercise, and put all animals to bed
                         John.FeedAnimals(zooAnimals[j]);
@@ -162,6 +183,7 @@ class Zookeeper extends ZooEmployee {
                     John.makeEvent("leave");
                     John.Leave(i);
                     Bob.Leave(i);
+                    Milan.Leave(i);
                 }
                 clock.Time();
             }
