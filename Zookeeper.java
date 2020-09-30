@@ -130,28 +130,45 @@ class Zookeeper extends ZooEmployee {
         zooAnimals[18] = Shannon;
         zooAnimals[19] = Susan;
 
+        ZooClock clock = new ZooClock();
+
         for (int i = 1; i <= days; i = i + 1){ // loop through the days
-            Bob.Arrive(i);
-            John.makeEvent("arrive"); //arrive event, etc
-            John.Arrive(i);
-
-            John.makeEvent("wake the animals");
-            for(int j = 0; j < 20; j++){ //wake all the animals first
-                John.WakeAnimals(zooAnimals[j]);
+            clock.Time();
+            while(clock.hour != 23){
+                if(clock.CurrTime == 8 && clock.meridiem == "am"){
+                    Bob.Arrive(i);
+                    John.makeEvent("arrive"); //arrive event, etc
+                    John.Arrive(i);
+                }
+                else if(clock.CurrTime == 9 && clock.meridiem == "am"){
+                    John.makeEvent("wake the animals");
+                    for(int j = 0; j < 20; j++){ //wake all the animals first
+                        John.WakeAnimals(zooAnimals[j]);
+                    }
+                }
+                else if(clock.CurrTime == 10 && clock.meridiem == "am"){
+                    John.makeEvent("roll call the animals");
+                    John.RollCall(zooAnimals); //call all the animals
+                }
+                else if(clock.CurrTime == 7 && clock.meridiem == "pm"){
+                    John.makeEvent("feed, exercise, and put the animals to sleep");
+                    for(int j = 0; j < 20; j++){ //feed, exercise, and put all animals to bed
+                        John.FeedAnimals(zooAnimals[j]);
+                        John.ExerciseAnimals(zooAnimals[j]);
+                        John.SleepAnimals(zooAnimals[j]);
+                    }
+                }
+                else if(clock.CurrTime == 8 && clock.meridiem == "pm"){
+                    John.makeEvent("leave");
+                    John.Leave(i);
+                    Bob.Leave(i);
+                }
+                clock.Time();
+            }
+            if(clock.hour == 23){
+                clock.newDay();
             }
 
-            John.makeEvent("roll call the animals");
-            John.RollCall(zooAnimals); //call all the animals
-
-            John.makeEvent("feed, exercise, and put the animals to sleep");
-            for(int j = 0; j < 20; j++){ //feed, exercise, and put all animals to bed
-                John.FeedAnimals(zooAnimals[j]);
-                John.ExerciseAnimals(zooAnimals[j]);
-                John.SleepAnimals(zooAnimals[j]);
-            }
-            John.makeEvent("leave");
-            John.Leave(i);
-            Bob.Leave(i);
         }
     }
 }
